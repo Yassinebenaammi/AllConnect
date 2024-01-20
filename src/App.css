@@ -1,38 +1,244 @@
-.App {
-  text-align: center;
+/* styles.css */
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* start Nav bar */
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: black; /* Adjust the background color as needed */
+}
+/* End Nav Bar */
+
+/* Start Heroo Section */
+
+.hero-title {
+  font-size: 5rem; /* Adjust the size as needed */
+  font-weight: 700;
+  margin-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-section {
+  margin-top: 2 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#6907e0, #a563e7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 20px; /* Adjust the size as needed */
+}
+.gradient-button {
+  background: linear-gradient(#6907e0, #a563e7);
+  color: #fff; /* Set text color to white or a color that contrasts well with the gradient */
+  width: 150px;
+  transition: background 2s; /* Add a smooth transition effect */
+}
+
+.gradient-button:hover {
+  background: linear-gradient(
+    #a563e7,
+    #6907e0
+  ); /* Change the gradient colors on hover */
+}
+
+.img-hero {
+  padding: 0;
+  margin-top: -20px;
+  margin-left: 50px;
+}
+
+.content {
+  margin-top: 7rem !important;
+}
+
+/* End Hero Section */
+
+/* Start Features section */
+.feature-item p {
+  font-size: 30px;
+  font-weight: 750;
+}
+
+.feature-item {
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect for the transform property */
+}
+
+.feature-item:hover {
+  transform: scale(1.1); /* Increase the scale on hover */
+}
+
+.smaller-image {
+  max-width: 60%; /* Adjust the maximum width as needed */
+}
+
+/* End Feautures Section  */
+
+/* Separated Line */
+.separator {
+  margin-top: 120px;
+  position: relative;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid #333; /* Adjust the line color as needed */
+}
+
+.separator h3 {
+  font-weight: 700;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white; /* Set the background color to match your container background */
+  padding: 0 10px;
+}
+
+/* SectionSeparator.css */
+.section-separator {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px; /* Adjust the margin between sections as needed */
 }
 
-.App-link {
-  color: #61dafb;
+.separator-line {
+  width: 70%;
+  height: 1px;
+  background-color: #cfcccc; /* Adjust the line color as needed */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.separator-title {
+  margin-left: 20px; /* Adjust the margin between line and title as needed */
+  font-size: 50px; /* Adjust the font size as needed */
+}
+
+/* ProjectsSection.css */
+
+.smaller-width {
+  max-width: 400px; /* Adjust the maximum width as needed */
+}
+
+/* Contact */
+
+.talk {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#6907e0, #a563e7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Add this to your CSS file or style section */
+.social-icons {
+  display: flex;
+}
+
+.icon {
+  font-size: 24px;
+  color: #333; /* Adjust the color as needed */
+}
+
+/* TeamSection.css */
+
+.roundedimg {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  border-radius: 50%;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+/* Add other styles as needed */
+
+/* Team */
+
+/* TeamCard.css */
+/* TeamCard.css */
+
+.team-card {
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  background-color: #f0eded;
+  height: 100%; /* Set a specific height for the team card */
+}
+
+.team-card:hover {
+  background-color: #ffffff; /* Change this color to your desired hover background color */
+}
+
+.team-image {
+  margin-bottom: 15px;
+}
+
+.icon {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #555; /* Set the default color for social icons */
+}
+
+.icon:hover {
+  color: #007bff; /* Change this color to your desired hover color for social icons */
+}
+
+.team-description {
+  color: #777; /* Set the default color for team description */
+}
+
+
+
+/* MediaQueries */
+
+/* Small devices (phones) */
+@media (max-width: 767px) {
+  .mobile-hidden {
+    display: none; /* Hide the image on small screens */
+
   }
-  to {
-    transform: rotate(360deg);
+  .hero-title {
+    font-size: 4rem; /* Adjust the size as needed */
+    font-weight: 600;
+    margin-bottom: 20px;
   }
+  
+  .tm-card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Your styles for medium devices here */
+  .hero-title {
+    font-size: 4rem; /* Adjust the size as needed */
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+ 
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) {
+  /* Your styles for large devices here */
+  
+}
+
+
+.para{
+
+  font-size: 10px;
 }
